@@ -1,0 +1,65 @@
+ER Diagrams 
+
+ 
+
+ER = entity relationship 
+
+Entity – an object we want to model and store info about 
+
+ 
+
+When designing a database, one of the most important things is to design a database schema. Database schema is all the different tables, attributes that are going to be on those tables; requirements; relationships. 
+
+Would use an ER diagram – would take a data storage requirements and convert into an actual database schema. Use this ER to map out, way to organise schema.  
+
+ 
+
+Entity – student 
+
+Attributes – info about entity [student name, grade, gpa] 
+
+Primary key – attribute that's uniquely identifying an entry in the database table [student_id] 
+
+Composite attribute – an attribute that can be broken up into sub-attributes (name – into first name and last name) 
+
+Multi-values attribute – an attribute that can have more than one value (like clubs of a student – can have more than one value; double circles in his chart) 
+
+Derived attributes – an attribute that can be derived from the other attributes (has_honors)  
+
+Multiple entities – can define more than one entity in the diagram (class) 
+
+ 
+
+ 
+
+When we have multiple entities, we will want to find relationships between those entities.  
+
+(student 'takes' the class) 
+
+Partial participation – not all students have to take the class 
+
+Total participation – all of the classes need to be taken by at least a single student. All classes have to participate.  
+
+ 
+
+Relationship attributes – an attribute about the relationship (grade) - student will take a class and will get a specific grade. The grade isn't stored on student or a class, it's stored on the relationship. I can only be graded in the class if I take this class.  
+
+ 
+
+Relationship cardinality – the number of instances of an entity from a relation that can be associated with the relation. [1:1; 1:N; N:M]  
+
+N – any number. A student can take any number of classes. A class is taken by any number of students. N to multiple.  
+
+ 
+
+1:1 – a student can take 1 class, and a class can be taken by 1 student.  
+
+1:N – a student can take one class, and a class can be taken by many students.  
+
+N:M – student can take any number of students, and a student can take any number of classes.  
+
+ 
+
+Weak entity – an entity that cannot be uniquely identified by its attributes alone [exam – a class can have an exam, an exam can't exist without a class].  
+
+Identifying relationship – a relationship that serves to uniquely identify the weak entity. Weak entity has to have a total participation in this relationship.  
